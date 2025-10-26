@@ -1,0 +1,1589 @@
+{
+  "params": {
+    "N": 50,
+    "seed": 21,
+    "obsCount": 10,
+    "placement": "random",
+    "poisonRate": 0.1,
+    "coverEnabled": true,
+    "Hmax": 3,
+    "T": 200
+  },
+  "results": {
+    "accuracy": 0.09664948453608248,
+    "total": 776,
+    "correct": 75,
+    "conversations": {
+      "totalReplies": 1146,
+      "avgReplyDelay": 1.9316129032258065,
+      "conversationThreads": 474,
+      "avgMessagesPerThread": 6.5738396624472575
+    },
+    "routing": {
+      "avgPathLength": 2.9826700898587934,
+      "pathDiversity": 0.751604621309371,
+      "shortestPathUsage": 0.5994865211810013,
+      "totalPaths": 2342
+    },
+    "coverTraffic": {
+      "totalMessages": 3116,
+      "dummyMessages": 428,
+      "dummyFraction": 0.13735558408215662,
+      "effectiveness": {
+        "dummyDistributionEntropy": 5.240738381886274,
+        "uniqueSendersWithDummies": 45,
+        "avgDummiesPerSender": 9.511111111111111
+      }
+    },
+    "graphReconstruction": {
+      "totalNodes": 48,
+      "totalEdges": 135,
+      "tierDistribution": {
+        "acquaintance": 134,
+        "friend": 1
+      },
+      "avgConfidence": 0.42728173910734796,
+      "communities": 2,
+      "accuracy": {
+        "truePositives": 117,
+        "falsePositives": 18,
+        "falseNegatives": 299,
+        "precision": 0.8666666666666667,
+        "recall": 0.28125,
+        "f1Score": 0.4246823956442832
+      }
+    }
+  },
+  "groundTruth": {
+    "metadata": {
+      "N": 50,
+      "seed": 21,
+      "tierProbabilities": {
+        "pIntimate": 0.02,
+        "pFriend": 0.08,
+        "pAcquaintance": 0.2,
+        "pBridge": 0.01
+      },
+      "generatedAt": "2025-10-25T16:50:08.766Z",
+      "version": "1.0"
+    },
+    "statistics": {
+      "totalNodes": 50,
+      "totalEdges": 417,
+      "avgDegree": 16.68,
+      "minDegree": 11,
+      "maxDegree": 21,
+      "degreeDistribution": {
+        "11": 1,
+        "14": 3,
+        "15": 4,
+        "16": 16,
+        "17": 11,
+        "18": 9,
+        "19": 5,
+        "21": 1
+      },
+      "tierDistribution": {
+        "intimate": 50,
+        "friend": 93,
+        "acquaintance": 274
+      },
+      "components": 1,
+      "diameter": 2,
+      "clustering": 0.35003730531594324
+    },
+    "filename": "graph_N50_seed21_0_02-0_08-0_2.json"
+  },
+  "observer_log": [
+    {
+      "t": 0,
+      "a": 0,
+      "b": 26,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 2,
+      "b": 13,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 2,
+      "b": 46,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 5,
+      "b": 19,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 10,
+      "b": 21,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 12,
+      "b": 19,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 26,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 33,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 24,
+      "b": 25,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 26,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 35,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 5,
+      "b": 40,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 40,
+      "b": 41,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 42,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 26,
+      "b": 43,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 44,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 4,
+      "b": 45,
+      "count": 6
+    },
+    {
+      "t": 0,
+      "a": 41,
+      "b": 45,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 10,
+      "b": 45,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 46,
+      "b": 49,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 46,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 46,
+      "b": 47,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 34,
+      "b": 49,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 4,
+      "b": 8,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 5,
+      "b": 21,
+      "count": 4
+    },
+    {
+      "t": 0,
+      "a": 13,
+      "b": 42,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 16,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 2,
+      "b": 21,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 13,
+      "b": 23,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 24,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 34,
+      "b": 44,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 39,
+      "b": 46,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 39,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 13,
+      "b": 41,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 40,
+      "b": 43,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 42,
+      "b": 46,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 47,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 13,
+      "b": 49,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 3,
+      "b": 8,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 18,
+      "b": 19,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 25,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 24,
+      "b": 27,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 28,
+      "b": 46,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 26,
+      "b": 30,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 6,
+      "b": 34,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 35,
+      "b": 40,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 40,
+      "b": 44,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 43,
+      "b": 45,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 31,
+      "b": 45,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 24,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 6,
+      "b": 21,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 13,
+      "b": 28,
+      "count": 3
+    },
+    {
+      "t": 0,
+      "a": 36,
+      "b": 40,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 37,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 14,
+      "b": 40,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 8,
+      "b": 25,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 23,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 26,
+      "b": 46,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 16,
+      "b": 45,
+      "count": 2
+    },
+    {
+      "t": 0,
+      "a": 0,
+      "b": 34,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 2,
+      "b": 34,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 7,
+      "b": 13,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 15,
+      "b": 34,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 22,
+      "b": 45,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 7,
+      "b": 34,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 19,
+      "b": 37,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 38,
+      "b": 45,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 39,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 21,
+      "b": 46,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 15,
+      "b": 46,
+      "count": 1
+    },
+    {
+      "t": 0,
+      "a": 40,
+      "b": 47,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 13,
+      "b": 44,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 46,
+      "b": 47,
+      "count": 3
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 31,
+      "count": 3
+    },
+    {
+      "t": 1,
+      "a": 21,
+      "b": 35,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 24,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 4,
+      "b": 24,
+      "count": 4
+    },
+    {
+      "t": 1,
+      "a": 5,
+      "b": 21,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 16,
+      "b": 19,
+      "count": 3
+    },
+    {
+      "t": 1,
+      "a": 3,
+      "b": 8,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 22,
+      "b": 40,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 35,
+      "count": 3
+    },
+    {
+      "t": 1,
+      "a": 23,
+      "b": 34,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 0,
+      "b": 8,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 7,
+      "b": 21,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 36,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 8,
+      "b": 42,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 40,
+      "b": 43,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 24,
+      "b": 31,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 2,
+      "b": 40,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 13,
+      "b": 29,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 8,
+      "b": 14,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 33,
+      "count": 4
+    },
+    {
+      "t": 1,
+      "a": 10,
+      "b": 24,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 28,
+      "b": 46,
+      "count": 3
+    },
+    {
+      "t": 1,
+      "a": 19,
+      "b": 41,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 28,
+      "b": 40,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 16,
+      "b": 24,
+      "count": 1
+    },
+    {
+      "t": 1,
+      "a": 13,
+      "b": 48,
+      "count": 2
+    },
+    {
+      "t": 1,
+      "a": 22,
+      "b": 45,
+      "count": 1
+    }
+  ],
+  "sample_messages": [
+    [
+      {
+        "t": 0,
+        "sender": 0,
+        "recipient": 5,
+        "id": "reply_se0_u0_68q01",
+        "path": [
+          0,
+          23,
+          5
+        ],
+        "hopTimes": [
+          0,
+          1
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 0,
+        "sender": 0,
+        "recipient": 26,
+        "id": "reply_se0_u0_s007x",
+        "path": [
+          0,
+          26
+        ],
+        "hopTimes": [
+          0
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 0,
+        "sender": 2,
+        "recipient": 38,
+        "id": "reply_se0_u2_e42os",
+        "path": [
+          2,
+          13,
+          44,
+          38
+        ],
+        "hopTimes": [
+          0,
+          1,
+          2
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 0,
+        "sender": 2,
+        "recipient": 0,
+        "id": "reply_se0_u2_8o1i1",
+        "path": [
+          2,
+          46,
+          47,
+          0
+        ],
+        "hopTimes": [
+          0,
+          1,
+          2
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 0,
+        "sender": 3,
+        "recipient": 10,
+        "id": "reply_se0_u3_qurtj",
+        "path": [
+          3,
+          10
+        ],
+        "hopTimes": [
+          0
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 1,
+        "sender": 0,
+        "recipient": 23,
+        "id": "reply_se6_u0_chony",
+        "path": [
+          0,
+          23
+        ],
+        "hopTimes": [
+          1
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 1,
+        "sender": 1,
+        "recipient": 39,
+        "id": "reply_se6_u1_bhdyh",
+        "path": [
+          1,
+          39
+        ],
+        "hopTimes": [
+          1
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 1,
+        "sender": 1,
+        "recipient": 22,
+        "id": "reply_se6_u1_f0vhw",
+        "path": [
+          1,
+          6,
+          5,
+          22
+        ],
+        "hopTimes": [
+          1,
+          2,
+          3
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 1,
+        "sender": 3,
+        "recipient": 14,
+        "id": "reply_se6_u3_n6kyv",
+        "path": [
+          3,
+          39,
+          1,
+          14
+        ],
+        "hopTimes": [
+          1,
+          2,
+          3
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 1,
+        "sender": 3,
+        "recipient": 12,
+        "id": "reply_se6_u3_ty23u",
+        "path": [
+          3,
+          31,
+          19,
+          12
+        ],
+        "hopTimes": [
+          1,
+          2,
+          3
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 2,
+        "sender": 1,
+        "recipient": 41,
+        "id": "reply_se12_u1_ledhs",
+        "path": [
+          1,
+          41
+        ],
+        "hopTimes": [
+          2
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 2,
+        "sender": 5,
+        "recipient": 33,
+        "id": "reply_se12_u5_kxh6q",
+        "path": [
+          5,
+          33
+        ],
+        "hopTimes": [
+          2
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 2,
+        "sender": 6,
+        "recipient": 8,
+        "id": "reply_se12_u6_arzfj",
+        "path": [
+          6,
+          37,
+          33,
+          8
+        ],
+        "hopTimes": [
+          2,
+          3,
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 2,
+        "sender": 11,
+        "recipient": 31,
+        "id": "reply_se12_u11_kat0d",
+        "path": [
+          11,
+          31
+        ],
+        "hopTimes": [
+          2
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 2,
+        "sender": 16,
+        "recipient": 6,
+        "id": "reply_se12_u16_s3nb8",
+        "path": [
+          16,
+          10,
+          5,
+          6
+        ],
+        "hopTimes": [
+          2,
+          3,
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 3,
+        "sender": 2,
+        "recipient": 34,
+        "id": "reply_se18_u2_pik9h",
+        "path": [
+          2,
+          13,
+          44,
+          34
+        ],
+        "hopTimes": [
+          3,
+          4,
+          5
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 3,
+        "sender": 3,
+        "recipient": 8,
+        "id": "reply_se18_u3_lalbf",
+        "path": [
+          3,
+          29,
+          48,
+          8
+        ],
+        "hopTimes": [
+          3,
+          4,
+          5
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 3,
+        "sender": 3,
+        "recipient": 31,
+        "id": "reply_se18_u3_l2yjc",
+        "path": [
+          3,
+          10,
+          15,
+          31
+        ],
+        "hopTimes": [
+          3,
+          4,
+          5
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 3,
+        "sender": 5,
+        "recipient": 0,
+        "id": "reply_se18_u5_htp63",
+        "path": [
+          5,
+          23,
+          0
+        ],
+        "hopTimes": [
+          3,
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 3,
+        "sender": 8,
+        "recipient": 16,
+        "id": "reply_se18_u8_4ki4l",
+        "path": [
+          8,
+          16
+        ],
+        "hopTimes": [
+          3
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 4,
+        "sender": 0,
+        "recipient": 25,
+        "id": "reply_se24_u0_culbd",
+        "path": [
+          0,
+          25
+        ],
+        "hopTimes": [
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 4,
+        "sender": 1,
+        "recipient": 43,
+        "id": "reply_se24_u1_s8zjx",
+        "path": [
+          1,
+          22,
+          43
+        ],
+        "hopTimes": [
+          4,
+          5
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 4,
+        "sender": 2,
+        "recipient": 42,
+        "id": "reply_se24_u2_pe7ij",
+        "path": [
+          2,
+          36,
+          25,
+          42
+        ],
+        "hopTimes": [
+          4,
+          5,
+          6
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 4,
+        "sender": 7,
+        "recipient": 34,
+        "id": "reply_se24_u7_vyth0",
+        "path": [
+          7,
+          34
+        ],
+        "hopTimes": [
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 4,
+        "sender": 10,
+        "recipient": 45,
+        "id": "reply_se24_u10_f61lz",
+        "path": [
+          10,
+          45
+        ],
+        "hopTimes": [
+          4
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 5,
+        "sender": 5,
+        "recipient": 21,
+        "id": "reply_se30_u5_grbm5",
+        "path": [
+          5,
+          42,
+          27,
+          21
+        ],
+        "hopTimes": [
+          5,
+          6,
+          7
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 5,
+        "sender": 6,
+        "recipient": 18,
+        "id": "reply_se30_u6_rczng",
+        "path": [
+          6,
+          14,
+          18
+        ],
+        "hopTimes": [
+          5,
+          6
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 5,
+        "sender": 7,
+        "recipient": 9,
+        "id": "reply_se30_u7_wicl2",
+        "path": [
+          7,
+          1,
+          9
+        ],
+        "hopTimes": [
+          5,
+          6
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 5,
+        "sender": 10,
+        "recipient": 17,
+        "id": "reply_se30_u10_k24l2",
+        "path": [
+          10,
+          24,
+          22,
+          17
+        ],
+        "hopTimes": [
+          5,
+          6,
+          7
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 5,
+        "sender": 13,
+        "recipient": 0,
+        "id": "reply_se30_u13_hj8e8",
+        "path": [
+          13,
+          0
+        ],
+        "hopTimes": [
+          5
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 6,
+        "sender": 6,
+        "recipient": 29,
+        "id": "reply_se36_u6_8hi2i",
+        "path": [
+          6,
+          35,
+          3,
+          29
+        ],
+        "hopTimes": [
+          6,
+          7,
+          8
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 6,
+        "sender": 10,
+        "recipient": 25,
+        "id": "reply_se36_u10_tkq4s",
+        "path": [
+          10,
+          29,
+          25
+        ],
+        "hopTimes": [
+          6,
+          7
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 6,
+        "sender": 13,
+        "recipient": 41,
+        "id": "reply_se36_u13_dflfm",
+        "path": [
+          13,
+          41
+        ],
+        "hopTimes": [
+          6
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 6,
+        "sender": 17,
+        "recipient": 20,
+        "id": "reply_se36_u17_7u33e",
+        "path": [
+          17,
+          2,
+          34,
+          20
+        ],
+        "hopTimes": [
+          6,
+          7,
+          8
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 6,
+        "sender": 28,
+        "recipient": 32,
+        "id": "reply_se36_u28_8neos",
+        "path": [
+          28,
+          9,
+          41,
+          32
+        ],
+        "hopTimes": [
+          6,
+          7,
+          8
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 7,
+        "sender": 10,
+        "recipient": 38,
+        "id": "reply_se42_u10_vbsd7",
+        "path": [
+          10,
+          38
+        ],
+        "hopTimes": [
+          7
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 7,
+        "sender": 21,
+        "recipient": 26,
+        "id": "reply_se42_u21_omazh",
+        "path": [
+          21,
+          2,
+          0,
+          26
+        ],
+        "hopTimes": [
+          7,
+          8,
+          9
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 7,
+        "sender": 40,
+        "recipient": 18,
+        "id": "reply_se42_u40_0hxu7",
+        "path": [
+          40,
+          18
+        ],
+        "hopTimes": [
+          7
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 7,
+        "sender": 6,
+        "recipient": 35,
+        "id": "reply_se43_u6_3f90t",
+        "path": [
+          6,
+          37,
+          40,
+          35
+        ],
+        "hopTimes": [
+          7,
+          8,
+          9
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 7,
+        "sender": 12,
+        "recipient": 24,
+        "id": "reply_se43_u12_xhzgb",
+        "path": [
+          12,
+          47,
+          22,
+          24
+        ],
+        "hopTimes": [
+          7,
+          8,
+          9
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 8,
+        "sender": 26,
+        "recipient": 2,
+        "id": "reply_se48_u26_zptjc",
+        "path": [
+          26,
+          23,
+          40,
+          2
+        ],
+        "hopTimes": [
+          8,
+          9,
+          10
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 8,
+        "sender": 47,
+        "recipient": 40,
+        "id": "reply_se48_u47_w6k63",
+        "path": [
+          47,
+          40
+        ],
+        "hopTimes": [
+          8
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 8,
+        "sender": 1,
+        "recipient": 18,
+        "id": "reply_se49_u1_nawo3",
+        "path": [
+          1,
+          39,
+          2,
+          18
+        ],
+        "hopTimes": [
+          8,
+          9,
+          10
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 8,
+        "sender": 6,
+        "recipient": 22,
+        "id": "reply_se50_u6_pi4cb",
+        "path": [
+          6,
+          0,
+          5,
+          22
+        ],
+        "hopTimes": [
+          8,
+          9,
+          10
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 8,
+        "sender": 17,
+        "recipient": 36,
+        "id": "reply_se50_u17_8x1sc",
+        "path": [
+          17,
+          47,
+          42,
+          36
+        ],
+        "hopTimes": [
+          8,
+          9,
+          10
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ],
+    [
+      {
+        "t": 9,
+        "sender": 1,
+        "recipient": 40,
+        "id": "reply_se54_u1_60c3q",
+        "path": [
+          1,
+          22,
+          5,
+          40
+        ],
+        "hopTimes": [
+          9,
+          10,
+          11
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 9,
+        "sender": 28,
+        "recipient": 42,
+        "id": "reply_se54_u28_ynb2v",
+        "path": [
+          28,
+          13,
+          42
+        ],
+        "hopTimes": [
+          9,
+          10
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 9,
+        "sender": 38,
+        "recipient": 47,
+        "id": "reply_se54_u38_pefbz",
+        "path": [
+          38,
+          26,
+          21,
+          47
+        ],
+        "hopTimes": [
+          9,
+          10,
+          11
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 9,
+        "sender": 42,
+        "recipient": 26,
+        "id": "reply_se56_u42_ic521",
+        "path": [
+          42,
+          27,
+          43,
+          26
+        ],
+        "hopTimes": [
+          9,
+          10,
+          11
+        ],
+        "dummy": false,
+        "isReply": true
+      },
+      {
+        "t": 9,
+        "sender": 7,
+        "recipient": 9,
+        "id": "reply_se57_u7_1aank",
+        "path": [
+          7,
+          9
+        ],
+        "hopTimes": [
+          9
+        ],
+        "dummy": false,
+        "isReply": true
+      }
+    ]
+  ]
+}
